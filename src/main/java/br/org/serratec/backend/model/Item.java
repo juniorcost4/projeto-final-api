@@ -10,6 +10,15 @@ public class Item {
 	@Column(name = "preco_material")
 	private Double precoMaterial;
 	
+	public Item() {
+		
+	}
+
+	public Item(Integer quantidadeItens, Double precoMaterial) {
+		this.quantidadeItens = quantidadeItens;
+		this.precoMaterial = precoMaterial;
+	}
+	
 	public Integer getQuantidadeItens() {
 		return quantidadeItens;
 	}

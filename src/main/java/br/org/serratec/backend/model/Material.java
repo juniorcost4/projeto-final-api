@@ -22,6 +22,16 @@ public class Material {
 	@Embedded
 	private Item item;
 
+	public Material() {
+
+	}
+
+	public Material(Long id, String descricao, Item item) {
+		this.id = id;
+		this.descricao = descricao;
+		this.item = item;
+	}
+
 	public Long getId() {
 		return id;
 	}

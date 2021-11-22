@@ -34,6 +34,18 @@ public class Obra {
 	inverseJoinColumns = @JoinColumn(name = "id_material"))
 	private List<Material> materiais;
 	
+	public Obra() {
+
+	}
+	
+	public Obra(Long id, LocalDate dataInicio, LocalDate dataFim, Double totalGasto, List<Material> materiais) {
+		this.id = id;
+		this.dataInicio = dataInicio;
+		this.dataFim = dataFim;
+		this.totalGasto = totalGasto;
+		this.materiais = materiais;
+	}
+
 	public Long getId() {
 		return id;
 	}
